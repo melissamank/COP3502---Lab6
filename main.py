@@ -1,3 +1,5 @@
+'''Melissa Mankewich'''
+
 def menu():
     print('Menu')
     print('-------------')
@@ -15,11 +17,7 @@ def encoder(passw):
     return res
 
 def decoder(encoded):
-    res = ''
-    for i in encoded:
-        new_pass = str((int(i)-3) % 10)
-        res = res + new_pass
-    return res
+    pass
 
 
 def main():
