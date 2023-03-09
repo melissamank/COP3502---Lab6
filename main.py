@@ -17,7 +17,12 @@ def encoder(passw):
     return res
 
 def decoder(encoded):
-    pass
+        #Added by Ozlem Polat
+    decoded = ''
+    for i in encoded:
+        new_pass = str((int(i) - 3) % 10)
+        decoded += new_pass
+    return decoded
 
 
 def main():
